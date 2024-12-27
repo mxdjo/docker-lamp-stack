@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   php:
-    container_name: php82
+    container_name: php${PHP_VERSION:-8.2}
     ports:
       - 8000:80
     volumes:
@@ -10,6 +10,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        PHP_VERSION: "${PHP_VERSION:-8.2}"
     networks:
       - my_network
 
