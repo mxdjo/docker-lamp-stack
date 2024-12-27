@@ -1,9 +1,8 @@
 ## Docker-compose of a LAMP stack ##
 
-* Currently You can choose the PHP version: before executing the docker-compose, define in a .env file the wanted version PHP_VERSION=XX
+* Actuellement on peut changer la PHP version: Avant d'executer le docker-compose, definir dans un fichier .env la version PHP (PHP_VERSION=XX)
 
 ## Explication du docker-compose.yml ##
-
 
 
 Ce fichier `docker-compose.yml` permet de définir et de lancer trois services Docker : PHP avec Apache, MySQL, et phpMyAdmin. Chaque service est configuré pour interagir avec les autres via un réseau commun.
